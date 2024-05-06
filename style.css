@@ -1,0 +1,193 @@
+:root{
+    --black : #011627;
+    --pink:  #FF3366;
+    --green: #2EC4B6;
+    --white: #F6F7F8;
+    --blue: #20A4F3;
+    
+    }
+    
+    *{
+    color: var(--white);
+    font-family:sans-serif;
+    }
+    input{
+    color: var(--pink);	
+    }
+    body {
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: var(--black);
+    }
+    
+    .title{
+        font-family: "Arial Black", "Arial Bold";
+        font-size: 100px;
+        color: var(--pink);
+        -webkit-text-stroke: 2px var(--white);
+        -webkit-text-stroke-width: thin;
+    }
+
+    .title2{
+        font-family: "Arial Black", "Arial Bold";
+        font-size: 65px;
+        color: var(--pink);
+        -webkit-text-stroke: 2px var(--white);
+        -webkit-text-stroke-width: thin;
+    }
+    
+    table {
+        margin-top: 20px;
+
+    }
+
+    
+    .flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    }
+
+    .game-and-score-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .center{
+        text-align:center;
+    }
+
+    .game-scores{
+        background-color: var(--pink);
+        width: 200px;
+        padding: 15px;
+        height: auto;
+        display:flex;
+        border-radius: 10px;
+    }
+    
+    .container {
+        max-width: 2000px;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+    
+    /*
+    div for both with flex = column,
+    give second div different id and clear above div
+    */
+
+    }
+    
+    .question {
+        font-size: xx-large;
+        margin-top: 20px;
+    }
+    
+    .answer {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    /* Style for buttons */
+    button {
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        border: 2px solid var(--white);
+        background-color: var(--pink);
+        color: white;
+        border-radius: 5px;
+        height: 50px;
+        width: 120px;
+    }
+    
+    /* Style for answer buttons */
+    .answer-button {
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        border: none;
+        background-color: var(--green);
+        color: white;
+        border-radius: 5px;
+        width: 200px;
+    }
+    
+    .total-points {
+        margin-top: 20px;
+    }
+    
+    /* Style for question buttons */
+    .question-button {
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        border: none;
+        background-color: var(--green);
+        color: white;
+        border-radius: 5px;
+        height: 75px;
+        width: 200px;
+    }
+    
+    
+    
+    /* Style for selected buttons */
+    .selected-button {
+        background-color: gray; /* Change this to the desired color for selected buttons */
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        height: 75px;
+        width: 200px;
+    }
+    
+    .leaderboard {
+       background-color: var(--white);
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .questions  tr,td,td{
+        color: var(--white);
+
+    }
+    .leaderboard tr,th,td{
+        font-family: "Arial Black", "Arial Bold";
+        border-bottom: 1px solid var(--black);
+        color:var(--pink);
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+
+    #alt-leader{
+        font-family: "Arial Black", "Arial Bold";
+        color:var(--blue);
+    
+    }
+
+    .correct{
+        font-family: "Arial Black", "Arial Bold";
+        color:var(--green);
+        font-size: 65px;
+        -webkit-text-stroke: 2px var(--white);
+        -webkit-text-stroke-width: thin;
+    }
+
+    .wrong{
+        font-family: "Arial Black", "Arial Bold";
+        color:var(--pink);
+        font-size: 65px;
+        -webkit-text-stroke: 2px var(--white);
+        -webkit-text-stroke-width: thin;
+    }
